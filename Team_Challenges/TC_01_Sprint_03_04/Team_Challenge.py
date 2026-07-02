@@ -261,8 +261,6 @@ if "GEMINI_API_KEY" not in os.environ:
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 MODEL = 'gemini-2.5-flash'
 
-np.movies10 = 'Hola'
-
 
 def summarize_overview_es(overview, title=""):
     
@@ -281,7 +279,6 @@ def summarize_overview_es(overview, title=""):
     
     return response.text.strip()
     
-
 overview_es_list = []
 
 for idx, row in movies10.iterrows():
